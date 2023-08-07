@@ -12,7 +12,7 @@
     "maxFailures": 0,
     "metadata": {
       "actualWorkers": 1,
-      "totalTime": 12924.176999986172
+      "totalTime": 13671.888000011444
     },
     "preserveOutput": "always",
     "reporter": [
@@ -42,7 +42,7 @@
       {
         "outputDir": "C:/Users/KARTHIK KUMAR/workspace/playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "id": "",
         "name": "",
         "testDir": "C:/Users/KARTHIK KUMAR/workspace/playwright",
@@ -81,12 +81,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 12041,
+                  "duration": 12814,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-08-07T16:08:42.451Z",
+                  "startTime": "2023-08-07T16:31:34.440Z",
                   "attachments": [
                     {
                       "name": "screenshot",

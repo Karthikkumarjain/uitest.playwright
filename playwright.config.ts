@@ -5,7 +5,7 @@ testMatch:["tests/login.test.ts"],
 use: {
     screenshot:'on',
     video: 'off',
-    headless:false
+ //   headless:false
 },
 retries:2,
 reporter: [["dot"],["json",{
