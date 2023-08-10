@@ -23,4 +23,9 @@ export default class LoginPage {
         await this.page.locator("//input[@value='Login']").click();
     }
 
+    getTitleOfPage(){
+
+        return this.page.title();
+    }
+
 }

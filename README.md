@@ -1,10 +1,12 @@
-Create a folder
-cmd --> type code .
-visual code will open
-plugin -->playwright by micorsoft-->download
-CTRL+SHIFT+P--->COMMAND PANEL
-install playright
-select browsers and OK
+**Steps to create a fresh Project :
+**
+1.Create a folder in local
+2.cmd --> type code .
+3.visual code will open
+4.plugin -->playwright by micorsoft-->download
+5.CTRL+SHIFT+P--->COMMAND PANEL
+6.install playright
+7.select browsers and OK
 
 
 ctrl+J -->Bring terminal
@@ -16,3 +18,8 @@ ctrl+L-->Clear terminal
 
 playwright recorder:
 npx playwright codegen
+
+
+Steps to git ignore if already updated
+
+Sample : $ git rm --cached jsonReports/

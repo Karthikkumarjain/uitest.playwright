@@ -36,8 +36,8 @@ export default class RegisterPage{
 
     }
 
-    async radioButtonForSubscription(){
-        await this.page.locator("//label[normalize-space()='No']").click();
+      radioButtonForSubscription(){
+        return this.page.locator("//label[normalize-space()='No']");
 
     }
 
@@ -50,6 +50,11 @@ export default class RegisterPage{
     async clickOnSubmit(){
         await this.page.click("//input[@type='submit']");
 
+    }
+
+     contentOnSuccesfullCreation(){
+
+        return this.page.locator("//h1[text()=' Your Account Has Been Created!']").textContent();
     }
 
 }
