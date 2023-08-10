@@ -12,7 +12,7 @@
     "maxFailures": 0,
     "metadata": {
       "actualWorkers": 1,
-      "totalTime": 6262.429000020027
+      "totalTime": 6801.932999968529
     },
     "preserveOutput": "always",
     "reporter": [
@@ -48,7 +48,7 @@
         "testDir": "C:/Users/KARTHIK KUMAR/workspace/playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/register.test.ts"
+          "tests/registerandlogin.test.ts"
         ],
         "timeout": 30000
       }
@@ -61,13 +61,13 @@
   },
   "suites": [
     {
-      "title": "tests\\register.test.ts",
-      "file": "tests/register.test.ts",
+      "title": "tests\\registerandlogin.test.ts",
+      "file": "tests/registerandlogin.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Resgister new user on the page",
+          "title": "Login to the application",
           "ok": true,
           "tags": [],
           "tests": [
@@ -81,17 +81,17 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 5018,
+                  "duration": 5599,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-08-10T17:53:58.964Z",
+                  "startTime": "2023-08-10T18:26:04.947Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\KARTHIK KUMAR\\workspace\\playwright\\test-results\\tests-register-Resgister-new-user-on-the-page\\test-finished-1.png"
+                      "path": "C:\\Users\\KARTHIK KUMAR\\workspace\\playwright\\test-results\\tests-registerandlogin-Login-to-the-application\\test-finished-1.png"
                     }
                   ]
                 }
@@ -99,10 +99,10 @@
               "status": "expected"
             }
           ],
-          "id": "e8a2cb919faa658e8b31-9f7a120044e6f2710a43",
-          "file": "tests/register.test.ts",
-          "line": 4,
-          "column": 5
+          "id": "d119e99113b17f491dae-30adc4e042c69c30dd36",
+          "file": "tests/registerandlogin.test.ts",
+          "line": 23,
+          "column": 6
         }
       ]
     }

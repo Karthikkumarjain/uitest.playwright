@@ -1,7 +1,8 @@
 import { expect, test } from '@playwright/test'
 import RegisterPage from '../pages/registerPage'
+import LoginPage from '../pages/loginPage'
 
-test("Resgister new user on the page", async ({ page, baseURL }) => {
+test("Register new user on the page", async ({ page, baseURL }) => {
 
     const register = new RegisterPage(page);
     await page.goto(`${baseURL}route=account/register`);
@@ -14,7 +15,18 @@ test("Resgister new user on the page", async ({ page, baseURL }) => {
     await register.radioButtonForSubscription();
 
 
-register.agreeTermsAndCondition();
-register.clickOnSubmit();
+await register.agreeTermsAndCondition();
+await register.clickOnSubmit();
+
+})
+
+test.only("Login to the application", async({page,baseURL})=>{
+
+    const loginPage = new LoginPage(page);
+    await page.goto(`${baseURL}route=account/login`)
+    await loginPage.enterEmailIdForLogin("asdad@gmail.com");
+    await loginPage.enterPasswordForLogin("1234567");
+    
+    await loginPage.clickOnLoginButton();
 
 })
