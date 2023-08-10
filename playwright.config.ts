@@ -4,7 +4,7 @@ const config: PlaywrightTestConfig = {
     testMatch: ["tests/registerandlogin.test.ts"],
     use: {
         baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
-        headless: false,
+        headless: true,
         screenshot: 'on',
         video: 'off',
         launchOptions: {
