@@ -12,7 +12,7 @@
     "maxFailures": 0,
     "metadata": {
       "actualWorkers": 1,
-      "totalTime": 13671.888000011444
+      "totalTime": 6262.429000020027
     },
     "preserveOutput": "always",
     "reporter": [
@@ -42,13 +42,13 @@
       {
         "outputDir": "C:/Users/KARTHIK KUMAR/workspace/playwright/test-results",
         "repeatEach": 1,
-        "retries": 2,
+        "retries": 0,
         "id": "",
         "name": "",
         "testDir": "C:/Users/KARTHIK KUMAR/workspace/playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/login.test.ts"
+          "tests/register.test.ts"
         ],
         "timeout": 30000
       }
@@ -61,13 +61,13 @@
   },
   "suites": [
     {
-      "title": "tests\\login.test.ts",
-      "file": "tests/login.test.ts",
+      "title": "tests\\register.test.ts",
+      "file": "tests/register.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Login test demo",
+          "title": "Resgister new user on the page",
           "ok": true,
           "tags": [],
           "tests": [
@@ -81,17 +81,17 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 12814,
+                  "duration": 5018,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-08-07T16:31:34.440Z",
+                  "startTime": "2023-08-10T17:53:58.964Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\KARTHIK KUMAR\\workspace\\playwright\\test-results\\tests-login-Login-test-demo\\test-finished-1.png"
+                      "path": "C:\\Users\\KARTHIK KUMAR\\workspace\\playwright\\test-results\\tests-register-Resgister-new-user-on-the-page\\test-finished-1.png"
                     }
                   ]
                 }
@@ -99,9 +99,9 @@
               "status": "expected"
             }
           ],
-          "id": "ef85df6096d4739f2c52-456802a5df7135291af1",
-          "file": "tests/login.test.ts",
-          "line": 3,
+          "id": "e8a2cb919faa658e8b31-9f7a120044e6f2710a43",
+          "file": "tests/register.test.ts",
+          "line": 4,
           "column": 5
         }
       ]

@@ -1,18 +1,22 @@
-import { PlaywrightTestConfig} from '@playwright/test';
+import { PlaywrightTestConfig } from '@playwright/test';
 
-const config:PlaywrightTestConfig = {
-testMatch:["tests/login.test.ts"],
-use: {
-    screenshot:'on',
-    video: 'off',
- //   headless:false
-},
-retries:2,
-reporter: [["dot"],["json",{
-    outputFile: "jsonReports/jsponReport.json"
-}],["html",{
-    open:"never"
-}]]
+const config: PlaywrightTestConfig = {
+    testMatch: ["tests/register.test.ts"],
+    use: {
+        baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
+        headless: false,
+        screenshot: 'on',
+        video: 'off',
+        launchOptions: {
+         //   slowMo: 10000
+        }
+    },
+   // retries: 2,
+    reporter: [["dot"], ["json", {
+        outputFile: "jsonReports/jsponReport.json"
+    }], ["html", {
+        open: "never"
+    }]]
 
 };
 export default config;
