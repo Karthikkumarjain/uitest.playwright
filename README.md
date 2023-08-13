@@ -23,3 +23,5 @@ npx playwright codegen
 Steps to git ignore if already updated
 
 Sample : $ git rm --cached jsonReports/
+
+If we want to run specific browser: Change script in package.json to "npx playwright test --project=chrome"

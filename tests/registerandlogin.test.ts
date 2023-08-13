@@ -4,7 +4,7 @@ import LoginPage from '../pages/loginPage'
 import ShopByCategory from '../pages/shopByCategory'
 
 
-test.describe("Registration and Login Test", async () => {
+test.describe("Registration, Login and Add an item to cart", async () => {
 
     test("Register new user on the page", async ({ page, baseURL }) => {
 
@@ -47,7 +47,12 @@ test.describe("Registration and Login Test", async () => {
         await shopByCategory.clickOnCameraCategory();
         let actualTitleOfPage =await page.title();
         expect(actualTitleOfPage).toEqual("Cameras");
+        await shopByCategory.addItemToCart();
 
+        let itemAdded =await page.locator("(//a[contains(text(),'HTC Touch HD')])[2]").textContent();
+
+        expect(itemAdded).toEqual("HTC Touch HD");
+            
     })
 
 
