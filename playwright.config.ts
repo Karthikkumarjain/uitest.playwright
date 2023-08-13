@@ -1,7 +1,7 @@
 import { PlaywrightTestConfig, devices, firefox } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-    testMatch: ["tests/registerandlogin_withfixtures.test.test.ts"],
+    testMatch: ["tests/registerandlogin_withfixtures.test.ts"],
 
     projects: [
         {
