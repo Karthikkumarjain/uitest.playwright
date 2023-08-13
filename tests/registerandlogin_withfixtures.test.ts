@@ -1,15 +1,12 @@
-import { expect, test } from '@playwright/test'
-import RegisterPage from '../pages/registerPage'
-import LoginPage from '../pages/loginPage'
-import ShopByCategory from '../pages/shopByCategory'
+import { expect,test } from '../base/basefixture'
 import * as data from '../testdata/registrationdetails.json'
 
 
 test.describe("Registration, Login and Add an item to cart", async () => {
 
-    test("Register new user on the page", async ({ page, baseURL }) => {
+    test("Register new user on the page", async ({ page, baseURL,register}) => {
 
-        const register = new RegisterPage(page);
+       
         await page.goto(`${baseURL}route=account/register`);
         await register.enterFirstName(data.firstname);
         await register.enterLastName(data.lastname);
@@ -26,9 +23,8 @@ test.describe("Registration, Login and Add an item to cart", async () => {
 
     })
 
-    test("Login to the application", async ({ page, baseURL }) => {
+    test("Login to the application", async ({ page, baseURL,loginPage }) => {
 
-        const loginPage = new LoginPage(page);
         await page.goto(`${baseURL}route=account/login`)
         await loginPage.enterEmailIdForLogin(data.emailId);
         await loginPage.enterPasswordForLogin(data.password);
@@ -38,10 +34,9 @@ test.describe("Registration, Login and Add an item to cart", async () => {
 
     })
 
-    test.only("Add an item to the cart", async ({ baseURL, page }) => {
+    test.only("Add an item to the cart", async ({ baseURL, page,loginPage,shopByCategory }) => {
 
-        const loginPage = new LoginPage(page);
-        const shopByCategory = new ShopByCategory(page);
+       
         await page.goto(`${baseURL}route=account/login`)
         await loginPage.loginUserTotheApplication(data.emailId, data.password);
         await shopByCategory.clickOnSelectByCategory();
