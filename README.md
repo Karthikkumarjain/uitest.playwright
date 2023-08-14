@@ -1,4 +1,3 @@
-
 # Test Automation with Playwright
 
 This is a sample test framework using POM in Playwright. The tests and other classes are written in .ts.The tests would run in firefox and chrome browser simultaneously.
@@ -23,16 +22,16 @@ The primary directories are as follows
 * testdata : Contains the different data providers.
 * pages : Contains locator classes along with the functions to be performed.
 * tests : Contain the tests for the web pages
-### System Under Test
+## System Under Test
 
 The system under test is : https://ecommerce-playground.lambdatest.io/index.php?
-### Libraries Used
+## Libraries Used
 
 * Playwright : For driving the UI tests
-### Config
+## Config
 
 * playwright.config.ts - Can be used to run tests in ci and local(Need to make couple of changes based on needs to run in local).
-### Run Tests
+## Run Tests
 
 To run the tests in local use
 
@@ -44,10 +43,10 @@ or
 ```bash
   npm run test
 ```
-### Reports
+## Reports
 
 * Reports are hosted on the Github pages.
-### New Project Setup and Helpers
+## New Project Setup and Helpers
 
 Steps to create a fresh Project :
 
@@ -64,4 +63,3 @@ To open recorder
 
 To run test with specific browser
 * If we want to run specific browser: Change script in package.json to "npx playwright test --project=chrome"
-
