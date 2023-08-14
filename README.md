@@ -28,6 +28,8 @@ The system under test is : https://ecommerce-playground.lambdatest.io/index.php?
 ## Libraries Used
 
 * Playwright : For driving the UI tests
+* Faker : To add random fake details (Curently not implemented)
+* Crypto-js : To encrypt and decrypt sensitive information(Curently not implemented)
 ## Config
 
 * playwright.config.ts - Can be used to run tests in ci and local(Need to make couple of changes based on needs to run in local).

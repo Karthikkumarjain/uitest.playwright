@@ -3,6 +3,7 @@ import RegisterPage from '../pages/registerPage'
 import LoginPage from '../pages/loginPage'
 import ShopByCategory from '../pages/shopByCategory'
 import * as data from '../testdata/registrationdetails.json'
+const CryptoJS =require("crypto-js")
 
 
 test.describe("Registration, Login and Add an item to cart", async () => {

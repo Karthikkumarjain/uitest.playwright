@@ -4,6 +4,7 @@ import * as data from '../testdata/registrationdetails.json'
 
 test.describe("Registration, Login and Add an item to cart", async () => {
 
+    
     test("Register new user on the page", async ({ page, baseURL,register}) => {
 
        
