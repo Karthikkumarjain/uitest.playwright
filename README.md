@@ -48,20 +48,3 @@ or
 ## Reports
 
 * Reports are hosted on the Github pages.
-## New Project Setup and Helpers
-
-Steps to create a fresh Project :
-
-* Create a folder in your local.
-* Open cmd --> type "code ." and press enter .
-* Visual studio code application will open(If it is * installed on the system) 
-* Add on: Plugin -->playwright(by micorsoft)-->download 
-* CTRL+SHIFT+P--->COMMAND PANEL 
-* install playright 
-* select browsers and OK
-
-To open recorder
-* playwright recorder: npx playwright codegen
-
-To run test with specific browser
-* If we want to run specific browser: Change script in package.json to "npx playwright test --project=chrome"
